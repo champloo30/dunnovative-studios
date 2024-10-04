@@ -1,4 +1,4 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
+import { NextResponse } from "next/server";
 import {google} from "googleapis";
 
 type SheetForm = {
@@ -12,15 +12,14 @@ type SheetForm = {
   message: string,
 }
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
+export async function POST(
+  req: Request
 ) {
   if (req.method !== 'POST') {
-    return res.status(405).send({ message: 'Not a POST request' })
+    return new NextResponse('Not a POST request', { status: 405 })
   }
 
-  const body = req.body as SheetForm
+  const body = await req.json() as SheetForm
 
   try {
     const auth = new google.auth.GoogleAuth({
@@ -51,11 +50,12 @@ export default async function handler(
       }
     });
 
-    return res.status(201).json({
-      data: response.data
-    })
+    return NextResponse.json(response)
   } catch (error) {
+    let message
+    if (error instanceof Error) message = error.message
     console.error(error)
-    return res.status(500).send({message: 'Something went wrong'})
+    console.error(message)
+    return new NextResponse(message, { status: 500 })
   }
 }

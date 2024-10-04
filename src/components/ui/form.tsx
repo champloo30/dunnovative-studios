@@ -26,7 +26,7 @@ const Form:React.FC<FormProps> = ({ onSubmit, isLoading }) => {
     email: '',
     response: '',
     phone: '',
-    service: [],
+    service: [''],
     other: '',
     message: '',
   })
