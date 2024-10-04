@@ -17,7 +17,7 @@ const Portfolio = () => {
             {/* left */}
             <div className="flex flex-col gap-4">
               <h1 className='font-daughter text-5xl text-toffee dark:text-aquamarine'>Our Portfolio</h1>
-              <p className='w-96 text-lg'>This is the space to introduce visitors to the business or brand. Briefly explain who's behind it, what it does and what makes it unique. Share its core values and what this site has to offer.</p>
+              <p className='w-96 text-lg'>This is the space to introduce visitors to the business or brand. Briefly explain who&apos;s behind it, what it does and what makes it unique. Share its core values and what this site has to offer.</p>
               <Button lg def>Let&apos;s Chat <ArrowRight className='h-5 w-5' /></Button>
             </div>
           </div>
