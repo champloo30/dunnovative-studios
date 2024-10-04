@@ -54,7 +54,8 @@ export default async function handler(
     return res.status(201).json({
       data: response.data
     })
-  } catch (error: any) {
-    return res.status(500).send({message: error.message})
+  } catch (error) {
+    console.error(error)
+    return res.status(500).send({message: 'Something went wrong'})
   }
 }

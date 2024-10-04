@@ -13,23 +13,14 @@ const Contact = () => {
   const router = useRouter()
 
   async function submit(formData: ContactData) {
-    // setIsLoading(true)
-    const rawResponse = await fetch('/api/submit', {
-      method: 'POST',
-      headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
+    setIsLoading(true)
+    axios.post(`/api/submit`, formData)
+    .then(() => {
+      toast.success('Your form has been submitted. We will reach out to you as soon as possible!')
+      router.refresh()
     })
-    const content = await rawResponse.json()
-    // .then(() => {
-    //   toast.success('Your form has been submitted. We will reach out to you as soon as possible!')
-    //   router.refresh()
-    // })
-    // .catch(() => {toast.error('Something went wrong')})
-    // .finally(() => {setIsLoading(false)})
-    alert(content)
+    .catch(() => {toast.error('Something went wrong')})
+    .finally(() => {setIsLoading(false)})
   }
 
   return (
