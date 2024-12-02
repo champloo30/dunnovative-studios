@@ -159,7 +159,7 @@ html {
 }
 
 .bg-testimonials-light {
-  background-image: url('https://static.wixstatic.com/media/11062b_6e619d0319494e5f93c8f1440d3cefcc~mv2_d_5381_3587_s_4_2.jpg/v1/fit/w_924,h_520/11062b_6e619d0319494e5f93c8f1440d3cefcc~mv2_d_5381_3587_s_4_2.jpg?fileUsed=false');
+  background-image: url('../assets/ds-light-bg.jpeg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -167,7 +167,7 @@ html {
 }
 
 .bg-testimonials-dark {
-  background-image: url('https://static.wixstatic.com/media/11062b_3509ad878ff7409ea954c17c54625b3d~mv2.jpg/v1/fit/w_924,h_520/11062b_3509ad878ff7409ea954c17c54625b3d~mv2.jpg?fileUsed=false');
+  background-image: url('../assets/ds-dark-bg.jpeg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

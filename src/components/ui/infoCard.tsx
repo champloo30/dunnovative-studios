@@ -17,9 +17,9 @@ const InfoCard:React.FC<InfoCardProps> = ({ test, icon, title, desc }) => {
           <h1 className='font-daughter text-2xl'>{title}</h1>
           <p className='text-center'>{desc}</p>
         </div> :
-        <div className='h-72 w-80 px-6 flex flex-col justify-center items-center gap-4 bg-whiteCrest dark:bg-oxford rounded-2xl text-brown dark:text-lightOxford'>
+        <div className='h-72 w-[25rem] px-6 flex flex-col justify-center items-center gap-4 bg-whiteCrest dark:bg-oxford rounded-2xl text-brown dark:text-lightOxford'>
           <Quote className='text-toffee dark:text-aquamarine' />
-          <p className='text-center'>{desc}</p>
+          <p className='h-36 flex items-center text-center'>{desc}</p>
           <h1 className='font-daughter text-toffee dark:text-aquamarine text-2xl'>{title}</h1>
         </div>
       }

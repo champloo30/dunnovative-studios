@@ -12,9 +12,8 @@ const Testimonials = () => {
       <Container>
         <div className='relative h-full w-full flex justify-center items-center'>
           <div className='flex justify-center items-center gap-8'>
-            <InfoCard test title='Frankie B.' desc='Lorem ipsum odor amet, consectetuer adipiscing elit. Volutpat ad ex sagittis mauris et scelerisque tellus nisl dolor. Tincidunt tempus libero dignissim parturient posuere.' />
-            <InfoCard test title='Jesse N.' desc='Lorem ipsum odor amet, consectetuer adipiscing elit. Volutpat ad ex sagittis mauris et scelerisque tellus nisl dolor. Tincidunt tempus libero dignissim parturient posuere.' />
-            <InfoCard test title='Jamie L.' desc='Lorem ipsum odor amet, consectetuer adipiscing elit. Volutpat ad ex sagittis mauris et scelerisque tellus nisl dolor. Tincidunt tempus libero dignissim parturient posuere.' />
+            <InfoCard test title='Pastor David Dunn' desc='We are throuroughly pleased with the timely service and maintenance of our website. The suggestions made and the ease of access along with the user friendliness is extremely helpful to those who may visit our website. We will recommend him to all who need this service!' />
+            <InfoCard test title='Jaylon Vaughn' desc='Dunnovative Studios was a massive help in getting our website redesigned to reflect our business. His patience, transparency, and commitment to his craft is an honor to experience and is underscored in his product.' />
           </div>
           <div className="custom-shape-divider-bottom">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

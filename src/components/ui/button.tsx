@@ -20,7 +20,7 @@ const Button: React.FC<ButtonTypes> = ({ avatar, icon, xs, sm, md, lg, full, def
   return (
     <button 
       className={`
-        flex justify-center items-center gap-2 bg-transparent border rounded-md  transition-all
+        flex justify-center items-center gap-2 bg-transparent border rounded-md transition-all
         ${avatar && 'h-10 w-10 rounded-full'} 
         ${icon && 'h-8 w-8'} 
         ${xs && 'py-px w-12 font-taviraj text-base'} 
