@@ -14,7 +14,7 @@ const SiteCard:React.FC<SiteCardProps> = ({ img, title, url }) => {
   const router = useRouter()
 
   return (
-    <div className='h-72 w-56 px-4 py-6 flex flex-col gap-4 bg-toffee dark:bg-aquamarine rounded-xl'>
+    <div className='h-72 md:w-64 lg:w-56 px-4 py-6 flex flex-col gap-4 bg-toffee dark:bg-aquamarine rounded-xl'>
       <div className='h-28 w-full flex justify-center items-center bg-whiteCrest dark:bg-oxford'>
         {img ? 
           <Image 

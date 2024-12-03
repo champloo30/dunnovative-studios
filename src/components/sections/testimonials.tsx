@@ -8,7 +8,7 @@ import InfoCard from '../ui/infoCard'
 const Testimonials = () => {
   const { theme } = useTheme()
   return (
-    <section aria-label='testimonials' id='testimonials' className={`h-[560px] w-screen flex justify-center items-center ${theme === 'dark' ? 'bg-testimonials-dark' : 'bg-testimonials-light'}`}>
+    <section aria-label='testimonials' id='testimonials' className={`md:h-[640px] lg:h-[560px] w-screen flex justify-center items-center ${theme === 'dark' ? 'bg-testimonials-dark' : 'bg-testimonials-light'}`}>
       <Container>
         <div className='relative h-full w-full flex justify-center items-center'>
           <div className='flex justify-center items-center gap-8'>

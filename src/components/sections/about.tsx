@@ -57,19 +57,19 @@ const About = () => {
             <div className='xl:hidden absolute lg:-right-40 flex flex-col justify-center items-center'>
               <div className='md:h-[660px] lg:h-[440px] md:w-[440px] lg:w-[660px] z-10 flex justify-center items-center bg-brown dark:bg-lightOxford rounded-s-2xl'>
                 <div className='md:h-[610px] lg:h-[390px] md:w-[390px] lg:w-[610px] flex justify-center items-center bg-whiteCrest dark:bg-oxford'>
-                  <div className='relative h-[300px] w-[460px] px-8 pb-4 md:-right-20 lg:right-4 flex items-end border-l-4 border-b-4 border-brown dark:border-lightOxford'>
+                  <div className='relative md:h-[440px] lg:h-[300px] w-[460px] px-8 pb-4 md:-right-20 lg:right-4 flex items-end border-l-4 border-b-4 border-brown dark:border-lightOxford'>
                     <ul className='flex items-end gap-12'>
-                      <li className='h-16 w-4 bg-brown dark:bg-lightOxford'></li>
-                      <li className='h-24 w-4 bg-brown dark:bg-lightOxford'></li>
-                      <li className='h-32 w-4 bg-brown dark:bg-lightOxford'></li>
-                      <li className='h-40 w-4 bg-brown dark:bg-lightOxford'></li>
-                      <li className='h-48 w-4 bg-brown dark:bg-lightOxford'></li>
+                      <li className='md:h-24 lg:h-16 w-4 bg-brown dark:bg-lightOxford'></li>
+                      <li className='md:h-36 lg:h-24 w-4 bg-brown dark:bg-lightOxford'></li>
+                      <li className='md:h-56 lg:h-32 w-4 bg-brown dark:bg-lightOxford'></li>
+                      <li className='md:h-72 lg:h-40 w-4 bg-brown dark:bg-lightOxford'></li>
+                      <li className='md:h-96 lg:h-48 w-4 bg-brown dark:bg-lightOxford'></li>
                       <li className='h-56 w-4 bg-brown dark:bg-lightOxford'></li>
                       <li className='h-64 w-4 bg-brown dark:bg-lightOxford'></li>
                     </ul>
                     <Image 
                       src={theme === 'dark' ? graphArrowDark : graphArrowLight}
-                      className='absolute md:h-48 lg:h-64 md:w-48 lg:w-64 bottom-24 md:right-60 lg:right-32'
+                      className='absolute md:h-48 lg:h-64 md:w-44 lg:w-64 md:bottom-64 lg:bottom-24 md:right-64 lg:right-32'
                       alt='Bar Graph Arrow Up'
                     />
                   </div>
