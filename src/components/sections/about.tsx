@@ -16,19 +16,19 @@ const About = () => {
   return (
     <section aria-label='about' id='about' className='h-screen w-screen flex justify-center items-center overflow-hidden'>
       <Container>
-        <div className='h-full w-full flex justify-between items-center'>
+        <div className='h-full w-full pt-28 md:pt-0 flex flex-col md:flex-row justify-between items-center'>
           {/* left */}
           <div className="flex flex-1 flex-col gap-4">
-            <h1 className='font-daughter text-5xl text-toffee dark:text-aquamarine'>Our Why</h1>
-            <p className='w-96 text-lg'>We have a passion for helping small businesses and churches grow. We want to help your passion innovate and redesign industries one page at a time. Our focus will always be fresh and new to help extend your reach well past expectations.</p>
+            <h1 className='font-daughter text-3xl md:text-5xl text-toffee dark:text-aquamarine'>Our Why</h1>
+            <p className='md:w-96 text-sm md:text-lg'>We have a passion for helping small businesses and churches grow. We want to help your passion innovate and redesign industries one page at a time. Our focus will always be fresh and new to help extend your reach well past expectations.</p>
             <Link href='#contact'><Button lg def>Let&apos;s Chat <ArrowRight className='h-5 w-5' /></Button></Link>
           </div>
           {/* right */}
-          <div className='relative h-full w-full flex flex-1 items-center'>
+          <div className='relative h-full w-full flex flex-1 justify-center md:justify-normal items-center'>
             {/* color container */}
-            <div className='absolute h-[calc(100vh-96px)] md:w-[240px] lg:w-[320px] xl:w-[480px] bottom-0 md:-right-16 bg-toffee dark:bg-aquamarine'></div>
+            <div className='absolute h-[240px] md:h-[calc(100vh-80px)] lg:h-[calc(100vh-96px)] w-screen md:w-[240px] lg:w-[320px] xl:w-[480px] bottom-0 -right-4 md:-right-16 xl:-right-20 bg-toffee dark:bg-aquamarine'></div>
             {/* laptop */}
-            <div className='lg:hidden xl:flex absolute 2xl:-right-40 flex-col justify-center items-center'>
+            <div className='hidden xl:flex absolute 2xl:-right-48 flex-col justify-center items-center'>
               <div className='h-[440px] w-[660px] z-10 flex justify-center items-center bg-brown dark:bg-lightOxford rounded-t-2xl'>
                 <div className='h-[390px] w-[620px] flex justify-center items-center bg-whiteCrest dark:bg-oxford'>
                   <div className='relative h-[300px] w-[460px] px-8 pb-4 right-4 flex items-end border-l-4 border-b-4 border-brown dark:border-lightOxford'>
@@ -54,7 +54,7 @@ const About = () => {
               </div>
             </div>
             {/* tablet */}
-            <div className='xl:hidden absolute lg:-right-40 flex flex-col justify-center items-center'>
+            <div className='hidden xl:hidden absolute lg:-right-40 sm:flex flex-col justify-center items-center'>
               <div className='md:h-[660px] lg:h-[440px] md:w-[440px] lg:w-[660px] z-10 flex justify-center items-center bg-brown dark:bg-lightOxford rounded-s-2xl'>
                 <div className='md:h-[610px] lg:h-[390px] md:w-[390px] lg:w-[610px] flex justify-center items-center bg-whiteCrest dark:bg-oxford'>
                   <div className='relative md:h-[440px] lg:h-[300px] w-[460px] px-8 pb-4 md:-right-20 lg:right-4 flex items-end border-l-4 border-b-4 border-brown dark:border-lightOxford'>
@@ -74,7 +74,31 @@ const About = () => {
                     />
                   </div>
                 </div>
-                <div className='absolute h-1 w-20 bottom-7 bg-brown dark:bg-lightOxford rounded-lg'></div>
+                <div className='absolute h-1 w-28 bottom-7 right-28 bg-brown dark:bg-lightOxford rounded-lg'></div>
+              </div>
+            </div>
+            {/* phone */}
+            <div className='absolute bottom-16 lg:-right-40 sm:hidden flex flex-col justify-center items-center'>
+              <div className='h-[320px] md:h-[660px] lg:h-[440px] w-[200px] md:w-[440px] lg:w-[660px] z-10 flex justify-center items-center bg-brown dark:bg-lightOxford rounded-2xl sm:rounded-s-2xl'>
+                <div className='h-[300px] md:h-[610px] lg:h-[390px] w-[180px] md:w-[390px] lg:w-[610px] flex justify-center items-center bg-whiteCrest dark:bg-oxford rounded-lg sm:rounded-none'>
+                  <div className='relative h-[220px] md:h-[440px] lg:h-[300px] w-[140px] md:w-[460px] px-2 md:px-8 pb-4 md:-right-20 lg:right-4 flex items-end border-l-4 border-b-4 border-brown dark:border-lightOxford'>
+                    <ul className='flex items-end gap-4 md:gap-12'>
+                      <li className='h-12 md:h-24 lg:h-16 w-4 bg-brown dark:bg-lightOxford'></li>
+                      <li className='h-20 md:h-36 lg:h-24 w-4 bg-brown dark:bg-lightOxford'></li>
+                      <li className='h-28 md:h-56 lg:h-32 w-4 bg-brown dark:bg-lightOxford'></li>
+                      <li className='h-36 md:h-72 lg:h-40 w-4 bg-brown dark:bg-lightOxford'></li>
+                      <li className='md:h-96 lg:h-48 w-4 bg-brown dark:bg-lightOxford'></li>
+                      <li className='lg:h-56 w-4 bg-brown dark:bg-lightOxford'></li>
+                      <li className='lg:h-64 w-4 bg-brown dark:bg-lightOxford'></li>
+                    </ul>
+                    <Image 
+                      src={theme === 'dark' ? graphArrowDark : graphArrowLight}
+                      className='absolute h-24 md:h-48 lg:h-64 w-24 md:w-44 lg:w-64 bottom-32 md:bottom-64 lg:bottom-24 md:right-64 lg:right-32'
+                      alt='Bar Graph Arrow Up'
+                    />
+                  </div>
+                </div>
+                <div className='absolute h-1 w-20 bottom-3 bg-brown dark:bg-lightOxford rounded-lg'></div>
               </div>
             </div>
           </div>

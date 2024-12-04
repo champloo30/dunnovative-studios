@@ -9,7 +9,7 @@ import Testimonials from "@/components/sections/testimonials";
 export default function Home() {
   
   return (
-    <div className='w-screen text-brown dark:text-lightOxford'>
+    <div className='w-screen text-brown dark:text-lightOxford overflow-hidden'>
       <Navbar />
       <main>
         <Hero />

@@ -12,10 +12,10 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false)
   return (
     <>
-      <div className='fixed md:h-20 lg:h-24 w-screen z-30 flex justify-center bg-whiteCrest/50 dark:bg-oxford/50 backdrop-blur-sm drop-shadow-xl'>
+      <div className='fixed h-20 lg:h-24 w-screen z-30 flex justify-center bg-whiteCrest/50 dark:bg-oxford/50 backdrop-blur-sm drop-shadow-xl'>
         <Container>
           {/* laptop screens */}
-          <div className='md:hidden xl:flex h-full items-center'>
+          <div className='hidden xl:flex h-full items-center'>
             {/* left */}
             <ul className='flex flex-1 gap-4 2xl:text-lg'>
               <li className='cursor-pointer hover:text-toffee dark:hover:text-aquamarine transition-all duration-100'><Link href='#home'>Home</Link></li>
@@ -43,9 +43,9 @@ const Navbar = () => {
           <div className='xl:hidden h-full flex items-center'>
             {/* left */}
             <div className='flex flex-1 justify-start'>
-              <Link className='flex flex-col justify-center items-center' href='#home'>
-                <h1 className='font-daughter text-toffee dark:text-aquamarine md:text-3xl lg:text-4xl leading-none'>Dunnovative Studios</h1>
-                <p className='md:text-base lg:text-xl leading-none'>Where Innovation Gets DUNN</p>
+              <Link className='flex flex-col justify-center items-center' href='#home' onClick={() => setOpenMenu(false)}>
+                <h1 className='font-daughter text-toffee dark:text-aquamarine text-2xl sm:text-3xl lg:text-4xl leading-none'>Dunnovative Studios</h1>
+                <p className='text-[0.8rem] sm:text-base lg:text-xl leading-none'>Where Innovation Gets DUNN</p>
               </Link>
             </div>
             {/* right */}

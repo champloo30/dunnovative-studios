@@ -9,7 +9,7 @@ interface MenuProps {
 
 const Menu:React.FC<MenuProps> = ({ setOpenMenu }) => {
   return (
-    <div className='fixed md:h-[calc(100vh-80px)] lg:h-[calc(100vh-96px)] w-screen z-20 md:top-20 lg:top-24 flex'>
+    <div className='fixed xl:hidden h-[calc(100vh-80px)] lg:h-[calc(100vh-96px)] w-screen z-20 top-20 lg:top-24 flex'>
       <div className='h-full w-1/3 bg-whiteCrest/80 dark:bg-oxford/80' onClick={() => setOpenMenu(false)}></div>
       <div className='h-full w-2/3 flex justify-center items-center bg-whiteCrest dark:bg-oxford border-l-4 border-toffee dark:border-aquamarine'>
         <ul className='flex flex-col gap-16'>
