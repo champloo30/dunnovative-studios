@@ -67,9 +67,10 @@ const Form:React.FC<FormProps> = ({ onSubmit, isLoading }) => {
   }
 
   return (
-    <form className="h-full w-full flex flex-col justify-evenly items-center" onSubmit={handleSubmit}>
-      <h1 className='w-full float-left font-daughter text-5xl text-whiteCrest dark:text-oxford'>Let&apos;s Chat</h1>
-      <div className='w-full flex justify-between gap-8'>
+    <form className="h-full w-full flex flex-col justify-evenly items-center gap-4 md:gap-0" onSubmit={handleSubmit}>
+      <h1 className='w-full float-left font-daughter text-3xl md:text-5xl text-whiteCrest dark:text-oxford'>Let&apos;s Chat</h1>
+      <div className='w-full flex justify-between gap-4 md:gap-8'>
+        {/* first name */}
         <div className='w-full flex flex-col gap-2 text-whiteCrest dark:text-oxford'>
           <label className='text-lg' htmlFor="firstName">First Name *</label>
           <input 
@@ -84,6 +85,7 @@ const Form:React.FC<FormProps> = ({ onSubmit, isLoading }) => {
             required 
           />
         </div>
+        {/* last name */}
         <div className='w-full flex flex-col gap-2 text-whiteCrest dark:text-oxford'>
           <label className='text-lg' htmlFor="lastName">Last Name *</label>
           <input 
@@ -99,6 +101,7 @@ const Form:React.FC<FormProps> = ({ onSubmit, isLoading }) => {
           />
         </div>
       </div>
+      {/* email */}
       <div className='w-full flex flex-col gap-2 text-whiteCrest dark:text-oxford'>
         <label className='text-lg' htmlFor="email">Email *</label>
         <input 
@@ -113,10 +116,12 @@ const Form:React.FC<FormProps> = ({ onSubmit, isLoading }) => {
           required 
         />
       </div>
-      <div className='w-full flex justify-between gap-8'>
+      {/* response type */}
+      <div className='w-full flex flex-col md:flex-row justify-between gap-4 md:gap-8'>
         <div className='w-full flex flex-col gap-2 text-whiteCrest dark:text-oxford'>
           <p className='text-lg'>Would you also like a response by phone? *</p>
           <div className='flex flex-col gap-1'>
+            {/* phone and email */}
             <div className='flex items-center gap-2'>
               <input 
                 className='h-4 w-4' 
@@ -130,6 +135,7 @@ const Form:React.FC<FormProps> = ({ onSubmit, isLoading }) => {
               />
               <label htmlFor="phone-email">Phone and Email</label>
             </div>
+            {/* email only */}
             <div className='flex items-center gap-2'>
               <input 
                 className='h-4 w-4' 
@@ -145,6 +151,7 @@ const Form:React.FC<FormProps> = ({ onSubmit, isLoading }) => {
             </div>
           </div>
         </div>
+        {/* phone */}
         <div className='w-full flex flex-col gap-2 text-whiteCrest dark:text-oxford'>
           <label className='text-lg' htmlFor="phone">Phone {isChecked.phoneEmail && '*'}</label>
           <input 
@@ -160,9 +167,11 @@ const Form:React.FC<FormProps> = ({ onSubmit, isLoading }) => {
           />
         </div>
       </div>
+      {/* services */}
       <div className='w-full flex flex-col gap-2 text-whiteCrest dark:text-oxford'>
         <p className='text-lg'>What service(s) are you interested in? *</p>
-        <div className='flex justify-between items-center'>
+        <div className='flex flex-col md:flex-row md:justify-between items-start md:items-center flex-wrap'>
+          {/* web dev and design */}
           <div className='flex items-center gap-2'>
             <input 
               className='h-4 w-4'
@@ -175,6 +184,7 @@ const Form:React.FC<FormProps> = ({ onSubmit, isLoading }) => {
             />
             <label htmlFor="web">Web Development & Design</label>
           </div>
+          {/* flyer */}
           <div className='flex items-center gap-2'>
             <input 
               className='h-4 w-4'
@@ -187,6 +197,7 @@ const Form:React.FC<FormProps> = ({ onSubmit, isLoading }) => {
             />
             <label htmlFor="flyer">Flyer Design</label>
           </div>
+          {/* logo */}
           <div className='flex items-center gap-2'>
             <input 
               className='h-4 w-4'
@@ -199,6 +210,7 @@ const Form:React.FC<FormProps> = ({ onSubmit, isLoading }) => {
             />
             <label htmlFor="logo">Logo Design</label>
           </div>
+          {/* branding */}
           <div className='flex items-center gap-2'>
             <input 
               className='h-4 w-4'
@@ -211,6 +223,7 @@ const Form:React.FC<FormProps> = ({ onSubmit, isLoading }) => {
             />
             <label htmlFor="branding">Business Branding</label>
           </div>
+          {/* other */}
           <div className='flex items-center gap-2'>
             <input 
               className='h-4 w-4'
@@ -225,6 +238,7 @@ const Form:React.FC<FormProps> = ({ onSubmit, isLoading }) => {
             <label htmlFor="other">Other</label>
           </div>
         </div>
+        {/* other input */}
         <input 
           className={`${!isChecked.other && 'hidden'} w-full py-1 px-2 bg-transparent border-t-0 border-x-0 border-b-2 border-whiteCrest dark:border-oxford rounded-none text-whiteCrest dark:text-oxford placeholder:text-whiteCrest/50 dark:placeholder:text-oxford/50`} 
           type="text" 
@@ -237,6 +251,7 @@ const Form:React.FC<FormProps> = ({ onSubmit, isLoading }) => {
           required={isChecked.other} 
         />
       </div>
+      {/* message */}
       <div className='w-full text-whiteCrest dark:text-oxford'>
         <label className='text-lg' htmlFor="message">Message *</label>
         <textarea 

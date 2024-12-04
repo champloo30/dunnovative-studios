@@ -8,10 +8,10 @@ import InfoCard from '../ui/infoCard'
 const Testimonials = () => {
   const { theme } = useTheme()
   return (
-    <section aria-label='testimonials' id='testimonials' className={`md:h-[640px] lg:h-[560px] w-screen flex justify-center items-center ${theme === 'dark' ? 'bg-testimonials-dark' : 'bg-testimonials-light'}`}>
+    <section aria-label='testimonials' id='testimonials' className={`h-[720px] md:h-[640px] lg:h-[560px] w-screen flex justify-center items-center ${theme === 'dark' ? 'bg-testimonials-dark' : 'bg-testimonials-light'}`}>
       <Container>
         <div className='relative h-full w-full flex justify-center items-center'>
-          <div className='flex justify-center items-center gap-8'>
+          <div className='-mt-16 md:mt-0 flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8'>
             <InfoCard test title='Pastor David Dunn' desc='We are throuroughly pleased with the timely service and maintenance of our website. The suggestions made and the ease of access along with the user friendliness is extremely helpful to those who may visit our website. We will recommend him to all who need this service!' />
             <InfoCard test title='Jaylon Vaughn' desc='Dunnovative Studios was a massive help in getting our website redesigned to reflect our business. His patience, transparency, and commitment to his craft is an honor to experience and is underscored in his product.' />
           </div>

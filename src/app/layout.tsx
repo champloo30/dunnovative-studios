@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${taviraj.variable} ${daughter.variable} antialiased min-h-screen bg-whiteCrest dark:bg-oxford font-taviraj scroll-smooth`}>
-        <ThemeProvider attribute="class" defaultTheme="light">
+        <ThemeProvider attribute="class">
           {children}
         </ThemeProvider>
       </body>

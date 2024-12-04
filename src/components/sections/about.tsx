@@ -78,27 +78,24 @@ const About = () => {
               </div>
             </div>
             {/* phone */}
-            <div className='absolute bottom-16 lg:-right-40 sm:hidden flex flex-col justify-center items-center'>
-              <div className='h-[320px] md:h-[660px] lg:h-[440px] w-[200px] md:w-[440px] lg:w-[660px] z-10 flex justify-center items-center bg-brown dark:bg-lightOxford rounded-2xl sm:rounded-s-2xl'>
-                <div className='h-[300px] md:h-[610px] lg:h-[390px] w-[180px] md:w-[390px] lg:w-[610px] flex justify-center items-center bg-whiteCrest dark:bg-oxford rounded-lg sm:rounded-none'>
-                  <div className='relative h-[220px] md:h-[440px] lg:h-[300px] w-[140px] md:w-[460px] px-2 md:px-8 pb-4 md:-right-20 lg:right-4 flex items-end border-l-4 border-b-4 border-brown dark:border-lightOxford'>
+            <div className='absolute bottom-16 sm:hidden flex flex-col justify-center items-center'>
+              <div className='h-[360px] w-[200px] z-10 flex justify-center items-center bg-brown dark:bg-lightOxford rounded-2xl'>
+                <div className='h-[340px] w-[180px] flex justify-center items-center bg-whiteCrest dark:bg-oxford rounded-lg sm:rounded-none'>
+                  <div className='relative h-[220px] w-[140px] px-2 pb-4 flex items-end border-l-4 border-b-4 border-brown dark:border-lightOxford'>
                     <ul className='flex items-end gap-4 md:gap-12'>
-                      <li className='h-12 md:h-24 lg:h-16 w-4 bg-brown dark:bg-lightOxford'></li>
-                      <li className='h-20 md:h-36 lg:h-24 w-4 bg-brown dark:bg-lightOxford'></li>
-                      <li className='h-28 md:h-56 lg:h-32 w-4 bg-brown dark:bg-lightOxford'></li>
-                      <li className='h-36 md:h-72 lg:h-40 w-4 bg-brown dark:bg-lightOxford'></li>
-                      <li className='md:h-96 lg:h-48 w-4 bg-brown dark:bg-lightOxford'></li>
-                      <li className='lg:h-56 w-4 bg-brown dark:bg-lightOxford'></li>
-                      <li className='lg:h-64 w-4 bg-brown dark:bg-lightOxford'></li>
+                      <li className='h-12 w-4 bg-brown dark:bg-lightOxford'></li>
+                      <li className='h-20 w-4 bg-brown dark:bg-lightOxford'></li>
+                      <li className='h-28 w-4 bg-brown dark:bg-lightOxford'></li>
+                      <li className='h-36 w-4 bg-brown dark:bg-lightOxford'></li>
                     </ul>
                     <Image 
                       src={theme === 'dark' ? graphArrowDark : graphArrowLight}
-                      className='absolute h-24 md:h-48 lg:h-64 w-24 md:w-44 lg:w-64 bottom-32 md:bottom-64 lg:bottom-24 md:right-64 lg:right-32'
+                      className='absolute h-24 w-24 bottom-32'
                       alt='Bar Graph Arrow Up'
                     />
                   </div>
                 </div>
-                <div className='absolute h-1 w-20 bottom-3 bg-brown dark:bg-lightOxford rounded-lg'></div>
+                <div className='absolute h-1 w-20 bottom-4 bg-brown dark:bg-lightOxford rounded-lg'></div>
               </div>
             </div>
           </div>

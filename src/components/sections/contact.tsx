@@ -23,7 +23,7 @@ const Contact = () => {
   }
 
   return (
-    <section aria-label='contact' id='contact' className='h-[calc(100vh-96px)] w-screen flex justify-center items-center bg-toffee dark:bg-aquamarine'>
+    <section aria-label='contact' id='contact' className='h-[900px] md:h-[calc(100vh-96px)] w-screen flex justify-center items-center bg-toffee dark:bg-aquamarine'>
       <Container>
         <Form onSubmit={submit} isLoading={isLoading} />
       </Container>
