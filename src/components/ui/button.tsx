@@ -30,7 +30,7 @@ const Button: React.FC<ButtonTypes> = ({ avatar, icon, xs, sm, md, lg, full, def
         ${full && 'py-1 w-full'}
         ${def && 'hover:bg-toffee dark:hover:bg-aquamarine border-toffee dark:border-aquamarine font-daughter text-lg text-toffee hover:text-whiteCrest dark:text-aquamarine dark:hover:text-oxford'}
         ${alt && 'border-whiteCrest dark:border-oxford hover:bg-whiteCrest dark:hover:bg-oxford text-whiteCrest dark:text-oxford hover:text-toffee dark:hover:text-aquamarine'}
-        ${submit && 'bg-brown xl:bg-toffee xl:hover:bg-brown dark:bg-oxford xl:dark:bg-aquamarine xl:dark:hover:bg-oxford border-none font-daughter text-whiteCrest xl:text-brown xl:hover:text-whiteCrest dark:text-aquamarine xl:dark:text-oxford xl:dark:hover:text-aquamarine text-xl'}
+        ${submit && 'bg-whiteCrest xl:bg-toffee xl:hover:bg-brown dark:bg-oxford xl:dark:bg-aquamarine xl:dark:hover:bg-oxford border-none font-daughter text-toffee xl:text-brown xl:hover:text-whiteCrest dark:text-aquamarine xl:dark:text-oxford xl:dark:hover:text-aquamarine text-xl'}
       `}
       onClick={onClick}
       type={submit ? 'submit' : 'button'}
